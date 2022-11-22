@@ -137,6 +137,7 @@ namespace CSharpTasks
                 string contents = File.ReadAllText(inputFileName);
                 contents = contents.ToUpper();
                 File.WriteAllText(outputFileName, contents);
+                Console.Write(String.Format($"\nInput file texts converted to upper case and appended to {outputFileName} \n"));
             }
             catch (Exception ex)
             {
